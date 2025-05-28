@@ -4,12 +4,12 @@ This repository contains a collection of projects and experiments using the Lang
 
 ## Folder Structure
 
-- **agents/**: Contains agent-related notebooks, such as Wikipedia search and web-based document retrieval using LangChain tools.
-- **api/**: FastAPI-based server and client for serving LLM-powered endpoints. Includes integration with Ollama and prompt templates.
-- **chain/**: Notebooks and data for document retrieval and question answering, including PDF loaders and vector store usage.
-- **chatbot/**: Streamlit-based chatbot using local LLMs (Ollama) and custom prompt templates.
-- **groq/**: (Details not shown, but likely contains Groq-related LLM integrations.)
-- **rag/**: Retrieval-Augmented Generation (RAG) experiments, including text and PDF loaders, and sample data for RAG pipelines.
+- **agents**: Contains agent-related notebooks, such as Wikipedia search and web-based document retrieval using LangChain tools.
+- **api**: FastAPI-based server and client for serving LLM-powered endpoints. Includes integration with Ollama and prompt templates.
+- **chain**: Notebooks and data for document retrieval and question answering, including PDF loaders and vector store usage.
+- **chatbot**: Streamlit-based chatbot using local LLMs (Ollama) and custom prompt templates.
+- **groq**: (Details not shown, but likely contains Groq-related LLM integrations.)
+- **rag**: Retrieval-Augmented Generation (RAG) experiments, including text and PDF loaders, and sample data for RAG pipelines.
 
 ## Key Features
 
@@ -31,15 +31,15 @@ pip install -r requirements.txt
 ## Getting Started
 
 1. Clone the repository and install dependencies.
-2. Start the FastAPI server from the `api/` folder:
+2. Start the FastAPI server from the `api` folder:
    ```powershell
    uvicorn api.app:app --reload
    ```
-3. Run the Streamlit chatbot from the `chatbot/` folder:
+3. Run the Streamlit chatbot from the `chatbot` folder:
    ```powershell
    streamlit run chatbot/localama.py
    ```
-4. Explore the notebooks in `agents/`, `chain/`, and `rag/` for more examples.
+4. Explore the notebooks in `agents`, `chain`, and `rag` for more examples.
 
 ## Notes
 - Make sure you have Ollama and any required LLM models installed locally.
